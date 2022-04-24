@@ -6,9 +6,12 @@
     --gray: #90A0B7;
     --darkBlue:#334D6E;
     --accentBlue:#109CF1;
+    --green:#2ED47A;
+
 }
 body {
     font-family: 'Poppins', sans-serif;
+    
 }
 
 /**** REGULAR  ****/
@@ -70,4 +73,26 @@ body {
     line-height: 20px;
     letter-spacing: 0.01em;
     color: var(--accentBlue);
+}
+
+.text-medium-profile-14 {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--black);
+   
+}
+.text-medium-profile-14:active{
+    color: var(--accentBlue);
+    cursor: pointer;
+}
+.text-medium-profile-name {
+    color: var(--accentBlue);
+    font-size: 14px;
+    line-height: 21px;
+}
+.text-medium-green { 
+    color: var(--green);
+    font-size: 56px;
+    line-height: 84px;
+    /* text-align: center; */
 }
