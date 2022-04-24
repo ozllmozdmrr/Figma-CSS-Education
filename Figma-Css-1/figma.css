@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+:root{
+    --accent: #109CF1;
+    --focusBlue: #098EDF;
+    --hoveredBlue:#34AFF9;
+    --yellow: #FFB946;
+    --red: #F7685B;
+    --green: #2ED47A;
+    --purple: #885AF8;
+    --black: #192A3E;
+    --tableblack: #323C47;
+    --tablegray: #707683;
+    --darkbluetext: #334D6E;
+    --gray: #90A0B7;
+    --ıcongray: #C2CFE0;
+    --white: #FFFFFF;
+    --smallRadius:4px;
+
+}
+
+.button {
+ background-color:var(--accent);
+ height: 42px;
+ border: none;
+ outline: none;
+ border-radius: var(--smallRadius);
+ box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
+ color: #fff;
+ text-align: center;
+ padding-right: 14px;
+ padding-left: 14px;
+
+ /* TODO */
+ font-family: 'Poppins', sans-serif;
+ font-weight: 600;
+ font-size: 13px;
+ line-height: 20px;
+ letter-spacing: 0.01em;
+}
+
+.wrapper {
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: var(--hoveredBlue);
+    cursor:pointer;
+    box-shadow: 0px 8px 16px rgba(52, 175, 249, 0.2);
+}
+
+.button:focus{
+    background-color: var(--focusBlue);
+    box-shadow: 0px 2px 6px rgba(9, 142, 223, 0.3);
+}
+
+.button:disabled {
+    cursor: default;
+    background-color: var(--ıcongray);
+}
+
+.button.secondary {
+    color: var(--accent);
+    background-color: #fff;
+    border: 1px solid var(--accent);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button.secondary:hover {
+    background-color: #fff;
+    color: var(--hoveredBlue);
+    border: 1px solid var(--hoveredBlue);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button.secondary:focus {
+    background-color: #fff;
+    border: 1px solid var(--focusBlue);
+    color: var(--focusBlue);
+}
+.button.secondary:disabled {
+    color: var(--ıcongray);
+    border: 1px solid var(--ıcongray);
+    cursor: default;
+}

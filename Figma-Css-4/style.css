@@ -1,0 +1,53 @@
+:root {
+    --checkBoxBorder: #D5D5D5;
+    --accent: #109CF1;
+    --smallRadius: 4px;
+}
+
+.checkContainer {
+    display: flex;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.checkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--checkBoxBorder); 
+    border-radius:var(--smallRadius) ;
+}
+.checkbox::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkContainer input:checked ~ .checkbox {
+    background-color: var(--accent);
+    border: none;
+    width: 16px;
+    height: 16px;
+}
+.checkContainer input:checked ~ .checkbox::after{
+    display: block;
+}
+.checkContainer .checkbox::after {
+    background: url(./icons/check.svg);
+    width: 10px;
+    height: 8px;
+    top: 4px;
+    left: 4px;
+}
